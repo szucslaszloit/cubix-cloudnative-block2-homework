@@ -23,12 +23,23 @@ Postman-ban: will call with message: http://localhost:8080/frontapp?message=Hell
 
 Mostmár jó:
 
+{
+    "msForReply": 165,
+    "backappMessage": "Hello",
+    "frontappHomeworkOwner": "Szucs Laci",
+    "frontappHostAddress": "172.18.0.3",
+    "backappHomeworkOwner": "Szucs Laci",
+    "backappHostAddress": "172.18.0.2",
+    "doExtraImageDataMatch": true
+}
+
+
 Postman-ban: will call without message: http://localhost:8080/frontapp
 
 Mostmár jó:
 
 {
-    "msForReply": 5,
+    "msForReply": 6,
     "backappMessage": "hardcoded-default-backapp-message",
     "frontappHomeworkOwner": "Szucs Laci",
     "frontappHostAddress": "172.18.0.3",
@@ -36,4 +47,5 @@ Mostmár jó:
     "backappHostAddress": "172.18.0.2",
     "doExtraImageDataMatch": true
 }
+
 
