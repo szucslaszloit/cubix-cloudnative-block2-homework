@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  frontapp:
+    image: frontapp
+    ports:
+      - "8080:8080"
+    environment:
+      # A backapp URL-jének átadása
+      BACK_URL: "http://backapp:8081"
+    depends_on:
+      - backapp
+  backapp:
+    image: backapp
+    # A backapp nem elérhető a helyi gépről
+    expose:
+      - "8081"
