@@ -1,0 +1,43 @@
+Maven app build:
+
+C:\Users\User\Documents\GitHub\cubix-cloudnative-block2-homework\frontapp>mvnw clean verify
+C:\Users\User\Documents\GitHub\cubix-cloudnative-block2-homework\backapp>mvnw clean verify
+
+Docker image build: 
+
+docker build -t frontapp --build-arg APP_DIR=frontapp .
+docker build -t backapp --build-arg APP_DIR=backapp .
+
+Label ellenőrzés:
+
+docker image inspect frontapp --format "{{.Config.Labels}}"
+docker image inspect backapp --format "{{.Config.Labels}}"
+
+Alkalmazások egyidejű futtatása:
+
+docker compose up
+
+Docker logs:
+
+Postman-ban: will call with message: http://localhost:8080/frontapp?message=Hello
+
+Sajnos internal server error-t kapok :(
+
+{
+    "timestamp": "2023-12-02T09:17:45.201+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/frontapp"
+}
+
+Postman-ban: will call without message: http://localhost:8080/frontapp
+
+Itt is internal server error-t kaok :(
+
+{
+    "timestamp": "2023-12-02T09:21:43.516+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/frontapp"
+}
+
