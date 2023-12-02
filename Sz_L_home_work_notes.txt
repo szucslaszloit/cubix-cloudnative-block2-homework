@@ -23,6 +23,11 @@ Postman-ban: will call with message: http://localhost:8080/frontapp?message=Hell
 
 Mostmár jó:
 
+2023-12-02T17:46:51.851Z  INFO 1 --- [nio-8080-exec-8] h.c.c.api.controller.FrontappController  : Preparing for calling backapp - message was: Hello
+2023-12-02T17:46:51.851Z  INFO 1 --- [nio-8080-exec-8] h.c.c.api.controller.FrontappController  : Calling backapp
+2023-12-02T17:46:51.861Z  INFO 1 --- [nio-8080-exec-8] h.c.c.api.controller.FrontappController  : Backapp call was successful, response was: BackappResponse[time=2023-12-02T17:46:51.856520975, message=Hello, homeworkOwner=Szucs Laci, hostAddress=172.18.0.2, extraImageData=Cubix training]
+2023-12-02T17:46:51.862Z  INFO 1 --- [nio-8080-exec-8] h.c.c.api.controller.FrontappController  : Response will be: FrontappResponse[msForReply=5, backappMessage=Hello, frontappHomeworkOwner=Szucs Laci, frontappHostAddress=172.18.0.3, backappHomeworkOwner=Szucs Laci, backappHostAddress=172.18.0.2, doExtraImageDataMatch=true]
+
 {
     "msForReply": 165,
     "backappMessage": "Hello",
@@ -35,6 +40,11 @@ Mostmár jó:
 
 
 Postman-ban: will call without message: http://localhost:8080/frontapp
+
+023-12-02T17:47:26.066Z  INFO 1 --- [nio-8080-exec-9] h.c.c.api.controller.FrontappController  : Preparing for calling backapp - message was: null
+2023-12-02T17:47:26.067Z  INFO 1 --- [nio-8080-exec-9] h.c.c.api.controller.FrontappController  : Calling backapp
+2023-12-02T17:47:26.080Z  INFO 1 --- [nio-8080-exec-9] h.c.c.api.controller.FrontappController  : Backapp call was successful, response was: BackappResponse[time=2023-12-02T17:47:26.074022117, message=hardcoded-default-backapp-message, homeworkOwner=Szucs Laci, hostAddress=172.18.0.2, extraImageData=Cubix training]
+2023-12-02T17:47:26.081Z  INFO 1 --- [nio-8080-exec-9] h.c.c.api.controller.FrontappController  : Response will be: FrontappResponse[msForReply=6, backappMessage=hardcoded-default-backapp-message, frontappHomeworkOwner=Szucs Laci, frontappHostAddress=172.18.0.3, backappHomeworkOwner=Szucs Laci, backappHostAddress=172.18.0.2, doExtraImageDataMatch=true]
 
 Mostmár jó:
 
