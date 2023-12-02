@@ -32,7 +32,7 @@ Sajnos internal server error-t kapok :(
 
 Postman-ban: will call without message: http://localhost:8080/frontapp
 
-Itt is internal server error-t kaok :(
+Itt is internal server error-t kapok :(
 
 {
     "timestamp": "2023-12-02T09:21:43.516+00:00",
